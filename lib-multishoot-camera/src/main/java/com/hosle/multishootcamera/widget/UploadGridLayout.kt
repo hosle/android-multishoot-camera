@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 
 /**
- * Created by tanjiahao on 2018/1/10
- * Original Project MultiShootCamera
+ * Created by tanjiahao on 2018/1/18
+ * Original Project HoMultiShootCamera
  */
 
 class UploadGridLayout : ViewGroup {

@@ -6,6 +6,7 @@ import com.bumptech.glide.request.target.Target
  * Created by tanjiahao on 2018/1/18
  * Original Project HoMultiShootCamera
  */
+
 class DisplayOption {
     /**
      * 加载中的资源id

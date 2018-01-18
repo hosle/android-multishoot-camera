@@ -14,6 +14,7 @@ import java.io.File
  * Created by tanjiahao on 2018/1/18
  * Original Project HoMultiShootCamera
  */
+
 class ImageLoadHelper(context: Context) {
     private var mGlide: Glide? = null
 

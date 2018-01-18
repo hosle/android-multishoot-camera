@@ -32,6 +32,10 @@ import java.io.OutputStream
 import java.util.*
 import kotlin.properties.Delegates
 
+/**
+ * Created by tanjiahao on 2018/1/18
+ * Original Project HoMultiShootCamera
+ */
 
 class CameraActivity : AppCompatActivity() {
 

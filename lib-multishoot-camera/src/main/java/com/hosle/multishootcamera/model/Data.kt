@@ -6,8 +6,8 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 /**
- * Created by tanjiahao on 2018/1/12
- * Original Project MultiShootCamera
+ * Created by tanjiahao on 2018/1/18
+ * Original Project HoMultiShootCamera
  */
 
 @SuppressWarnings("ParcelCreator")

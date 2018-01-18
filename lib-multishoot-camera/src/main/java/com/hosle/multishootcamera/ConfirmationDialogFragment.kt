@@ -10,9 +10,10 @@ import android.support.v4.app.DialogFragment
 import android.widget.Toast
 
 /**
- * Created by tanjiahao on 2018/1/8
- * Original Project MultiShootCamera
+ * Created by tanjiahao on 2018/1/18
+ * Original Project HoMultiShootCamera
  */
+
 class ConfirmationDialogFragment : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {

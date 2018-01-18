@@ -8,8 +8,8 @@ import android.view.SurfaceHolder
 import android.view.SurfaceView
 
 /**
- * Created by tanjiahao on 2018/1/5
- * Original Project MultiShootCamera
+ * Created by tanjiahao on 2018/1/18
+ * Original Project HoMultiShootCamera
  */
 
 class CameraPreview @JvmOverloads constructor(

@@ -22,10 +22,9 @@ import java.util.*
 import kotlin.properties.Delegates
 
 /**
- * Created by tanjiahao on 2018/1/9
- * Original Project MultiShootCamera
+ * Created by tanjiahao on 2018/1/18
+ * Original Project HoMultiShootCamera
  */
-
 
 class UploadActivity : AppCompatActivity() {
 
