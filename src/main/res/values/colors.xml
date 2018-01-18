@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_thumbnail_shoot_unselected">#ffffff</color>
+    <color name="bg_thumbnail_shoot_selected">@android:color/holo_red_light</color>
+    <color name="btn_enable">#262b3c</color>
+    <color name="btn_disable">#e6e6e6</color>
+</resources>

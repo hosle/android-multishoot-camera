@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#CC262b3c">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_camera_explain3x" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/camera_guide_text"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="206dp"
+            android:background="@drawable/btn_guide"
+            android:paddingBottom="11dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="44dp"
+            android:paddingTop="11dp"
+            android:text="知道了"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+</RelativeLayout>
