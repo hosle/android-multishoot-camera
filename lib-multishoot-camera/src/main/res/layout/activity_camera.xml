@@ -5,9 +5,9 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sfexpress.multishootcamera.CameraActivity">
+    tools:context="com.hosle.multishootcamera.CameraActivity">
 
-    <com.sfexpress.multishootcamera.cameraview.CameraView
+    <com.hosle.multishootcamera.cameraview.CameraView
         android:id="@+id/camera_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

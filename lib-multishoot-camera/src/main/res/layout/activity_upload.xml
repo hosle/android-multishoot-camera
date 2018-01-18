@@ -35,7 +35,7 @@
         android:textSize="14dp"
         tools:text="还需要拍摄" />
 
-    <com.sfexpress.multishootcamera.widget.UploadGridLayout
+    <com.hosle.multishootcamera.widget.UploadGridLayout
         android:id="@+id/container_thumbnail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
