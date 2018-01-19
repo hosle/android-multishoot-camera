@@ -34,6 +34,56 @@ Maven
 
 # Interface
 
+### 1. Implement UploadInterface
+
+The upload ability and the click event on submit button are explored to the UploadInterface class.
+
+Implement the UploadInterface and set it to the Singleton `MultiShootCameraUploadHelper`
+
+```kotlin
+MultiShootCameraUploadHelper.uploadInterface = object : UploadInterface {
+            override fun upload(file: String, subscriber: UploadSubscriber): Boolean {
+          		
+          		//start uploading
+                subscriber.onStart()
+
+                Thread(Runnable {
+                    for (i in 0..100) {
+                        Thread.sleep(60)
+                        val j = i
+                        
+                        //upload is in process
+                        runOnUiThread { subscriber.onProcessing(j) }
+                    }
+
+                    runOnUiThread {
+                    
+                        //success uploading
+                        subscriber.onSuccess("remote:"+file)
+                    }
+
+                }).start()
+
+                return true
+            }
+
+            override fun submit(remoteUrls: Array<String>,subscriber: SubmitSubscriber){
+            
+            		// callback the array of photo's remote urls
+            		// todo what you what to on next
+            }
+        }
+```
+
+
+### 2. Navigation Entrance
+
+To navigate the Activity, call `navigateCameraActivity` the extension function on the top package.
+
+```kotlin
+fun navigateCameraActivity(activity: Activity, \*count of photos you need*\shootCounts: Int)
+```
+
 # Lisence
 
 ```
