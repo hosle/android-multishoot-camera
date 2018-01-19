@@ -2,7 +2,5 @@
     <string name="app_name">ModuleMultiShootCamera</string>
     <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access camera.</string>
     <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
-    <string name="write_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access external storage.</string>
-    <string name="write_permission_not_granted">应用需要获取外部存储权限.</string>
     <string name="camera_guide_text">请在光线充足的环境下从不同角度拍摄货物，要求拍摄清晰</string>
 </resources>

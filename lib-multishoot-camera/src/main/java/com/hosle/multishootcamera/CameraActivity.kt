@@ -3,6 +3,7 @@ package com.hosle.multishootcamera
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.*
@@ -145,7 +146,7 @@ class CameraActivity : AppCompatActivity() {
     }
 
     private fun enableBtnCapture() =
-        Handler().postDelayed({ btnCapture?.isClickable = true }, 300)
+            Handler().postDelayed({ btnCapture?.isClickable = true }, 300)
 
 
     private fun showCamera() {
@@ -175,13 +176,29 @@ class CameraActivity : AppCompatActivity() {
             camera_view.start()
 
         } else {
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
-                ConfirmationDialogFragment.newInstance(R.string.camera_permission_confirmation,
-                        arrayOf(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE),
-                        REQUEST_CAMERA_PERMISSION,
-                        R.string.camera_permission_not_granted)
-            } else {
-                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), REQUEST_CAMERA_PERMISSION)
+
+            if (!ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
+                AlertDialog.Builder(this)
+                        .setMessage(R.string.camera_permission_confirmation)
+                        .setCancelable(false)
+                        .setPositiveButton(android.R.string.ok, { _, _ -> requestPermission() })
+                        .create()
+                        .show()
+            }else{
+                requestPermission()
+            }
+        }
+    }
+
+    private fun requestPermission() = ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), REQUEST_CAMERA_PERMISSION)
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+
+        when (requestCode) {
+            REQUEST_CAMERA_PERMISSION -> {
+                if (!grantResults.isNotEmpty() || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                    finish()
+                }
             }
         }
     }

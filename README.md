@@ -17,7 +17,7 @@ Gradle
 
 ```
 dependencies {
-	compile 'com.hosle.multishootcamera:lib-multishootcamera:1.0.0'
+	compile 'com.hosle.multishootcamera:lib-multishootcamera:1.0.1'
 }
 ```
 
@@ -27,7 +27,7 @@ Maven
 <dependency>
   <groupId>com.hosle.multishootcamera</groupId>
   <artifactId>lib-multishootcamera</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
@@ -37,7 +37,7 @@ Maven
 # Lisence
 
 ```
-Copyright (C) 2017. Henry Tam (Hosle) 
+Copyright (C) 2018. Henry Tam (Hosle) 
 
 Contact: hosle@163.com
 
