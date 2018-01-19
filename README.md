@@ -13,7 +13,7 @@ This project is build up by reference to [google cameraview](https://github.com/
 
 # Installation
 
-Gradle
+**Gradle**
 
 ```
 dependencies {
@@ -21,7 +21,7 @@ dependencies {
 }
 ```
 
-Maven
+**Maven**
 
 ```
 <dependency>
@@ -81,7 +81,7 @@ MultiShootCameraUploadHelper.uploadInterface = object : UploadInterface {
 To navigate the Activity, call `navigateCameraActivity` the extension function on the top package.
 
 ```kotlin
-fun navigateCameraActivity(activity: Activity, \*count of photos you need*\shootCounts: Int)
+fun navigateCameraActivity(activity: Activity, /*count of photos you need*/ shootCounts: Int)
 ```
 
 # Lisence
