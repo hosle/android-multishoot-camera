@@ -9,6 +9,8 @@ This project is build up by reference to [google cameraview](https://github.com/
 * A new page layouts all captured photos and supports for editting.
 * The upload interface is provided.
 
+![](./resPic/figure_demo.gif)
+
 # Demo
 
 # Installation
